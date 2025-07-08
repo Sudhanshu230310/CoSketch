@@ -1,6 +1,6 @@
 # CoSketch
 
-![CoSketch banner]("landing.png")
+![CoSketch banner](./landing.png)
 
 CoSketch is a **real-time collaborative drawing application** built using **Turborepo** and **Bun**. It includes separate apps for the frontend, backend API, and WebSocket server to enable seamless collaboration.
 
