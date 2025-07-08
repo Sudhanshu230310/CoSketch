@@ -1,20 +1,9 @@
 # CoSketch
 
-![CoSketch banner](https://github.com/NarsiBhati-Dev/CoSketch/blob/master/apps/cosketch-frontend/public/images/social-banner.webp?raw=true)
+![CoSketch banner]("landing.png")
 
 CoSketch is a **real-time collaborative drawing application** built using **Turborepo** and **Bun**. It includes separate apps for the frontend, backend API, and WebSocket server to enable seamless collaboration.
 
-## 🎬 CoSketch Demo
-
-[![Watch the CoSketch Demo](https://img.youtube.com/vi/m_uOsRsr8bw/maxresdefault.jpg)](https://www.youtube.com/watch?v=m_uOsRsr8bw)
-
-## Code of Conduct
-
-Please read and follow our [Code of Conduct](./CODE_OF_CONDUCT.md) to help keep **CoSketch** a welcoming and inclusive space for everyone
-
-## License
-
-This project is licensed under the [CoSketch Custom License](./LICENSE.md).
 
 ## 🏗 Project Structure
 
@@ -30,11 +19,6 @@ cosketch/
 │   ├── database/        # Prisma & PostgreSQL setup
 │   ├── types/           # Shared TypeScript types
 │   ├── backend-common/  # Common utilities for backend services
-├── docker/              # Docker configuration
-│   ├── backend.prod.Dockerfile    # Production Dockerfile for backend
-│   ├── frontend.prod.Dockerfile   # Production Dockerfile for frontend
-│   ├── websocket.prod.Dockerfile  # Production Dockerfile for WebSocket
-│   ├── docker-compose.yml         # Docker Compose configuration
 ├── .github/workflows/    # GitHub Actions CI/CD pipelines
 │   ├── cd_backend.yml    # CI/CD pipeline for backend
 │   ├── cd_frontend.yml   # CI/CD pipeline for frontend
@@ -122,31 +106,6 @@ Create environment files for each app:
 2. Rename them to `.env` in each app directory
 3. Fill in the required values like `DATABASE_URL`, `NEXT_PUBLIC_WS_URL`, etc.
 
-### Database Setup
-
-Start the PostgreSQL database using Docker:
-
-```sh
-bun run db:up
-```
-
-This command uses the docker-compose.yml file located in the docker directory to spin up a PostgreSQL container.
-
-### Generate Prisma Client
-
-Generate the Prisma client across all apps:
-
-```sh
-bun run generate
-```
-
-### Deploy Database Migrations
-
-Apply all migrations to your database:
-
-```sh
-bun run db:deploy
-```
 
 ### Run the Application
 
@@ -169,14 +128,6 @@ bun run build
 bun run start
 ```
 
-Or use the convenient combined command:
-
-```sh
-bun run server:start
-```
-
-This deploys database migrations and starts all services.
-
 ### Start Individual Apps
 
 You can also start specific apps individually:
@@ -192,21 +143,6 @@ bun run start:backend
 bun run start:websocket
 ```
 
-### Infrastructure Management
-
-The project includes Docker Compose configurations for running the entire stack:
-
-```sh
-# Build all Docker containers
-bun run infra:build
-
-# Start all infrastructure containers
-bun run infra:up
-
-# Stop all infrastructure containers
-bun run infra:down
-```
-
 ---
 
 ## 📦 Tech Stack
@@ -218,8 +154,6 @@ bun run infra:down
 - **WebSockets** → Real-time collaboration
 - **PostgreSQL** → Database
 - **Prisma** → ORM for database management
-- **Docker** → Containerized database for development
-- **Sharp** → Image processing
 - **GitHub Actions** → CI/CD pipelines
 
 ---
