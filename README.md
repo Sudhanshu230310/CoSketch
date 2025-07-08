@@ -19,10 +19,6 @@ cosketch/
 │   ├── database/        # Prisma & PostgreSQL setup
 │   ├── types/           # Shared TypeScript types
 │   ├── backend-common/  # Common utilities for backend services
-├── .github/workflows/    # GitHub Actions CI/CD pipelines
-│   ├── cd_backend.yml    # CI/CD pipeline for backend
-│   ├── cd_frontend.yml   # CI/CD pipeline for frontend
-│   ├── cd_websocket.yml  # CI/CD pipeline for WebSocket
 ├── turbo.json           # Turborepo config file
 ├── package.json         # Root package.json for Bun & Turborepo setup
 └── README.md            # Project documentation
