@@ -27,12 +27,12 @@ const siteMetadata = {
   socialBanner: `${SITE_URL}/images/social-banner.webp`,
 
   // social links
-  github: 'https://github.com/NarsiBhati-Dev/CoSketch.git',
-  linkedIn: 'https://www.linkedin.com/in/narsi-bhati-b43459224/',
-  twitter: 'https://x.com/NarsiBhati31',
+  github: 'https://github.com/Sudhanshu230310/CoSketch',
+  linkedIn: 'https://www.linkedin.com/in/sudhanshu-394271297/',
+  twitter: '',
 
   // contacts
-  email: 'narsibhati2000@gmail.com',
+  email: 'gaurs8688@gmail.com',
 };
 
 export default siteMetadata;
