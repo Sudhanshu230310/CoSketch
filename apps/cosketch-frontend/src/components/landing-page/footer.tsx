@@ -19,7 +19,6 @@ const Footer = () => {
         <section className='flex w-full flex-col items-start justify-start md:w-40'>
           <Logo />
           <section className='mt-8 flex justify-between gap-4'>
-            <CardSocial title='Twitter' href={siteMetadata.twitter} />
             <CardSocial title='Github' href={siteMetadata.github} />
             <CardSocial title='LinkedIn' href={siteMetadata.linkedIn} />
           </section>

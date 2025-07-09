@@ -29,7 +29,7 @@ const siteMetadata = {
   // social links
   github: 'https://github.com/Sudhanshu230310/CoSketch',
   linkedIn: 'https://www.linkedin.com/in/sudhanshu-394271297/',
-  twitter: '',
+  
 
   // contacts
   email: 'gaurs8688@gmail.com',
