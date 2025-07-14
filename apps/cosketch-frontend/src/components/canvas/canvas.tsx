@@ -196,7 +196,7 @@ const Canvas: React.FC<CanvasProps> = ({ roomId }) => {
   ]);
 
   if (!token) {
-    return null;
+    return null; 
   }
 
   return (
