@@ -84,7 +84,7 @@ Follow these steps to get **CoSketch** up and running locally:
 
 - **Bun** (v1.2.5 or later)
 - **Node.js** (v18 or later)
-- **Docker** and **Docker Compose** (for PostgreSQL and infrastructure)
+- **Docker** (for PostgreSQL)
 
 ### Install Dependencies
 
